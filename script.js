@@ -150,7 +150,7 @@ list.addEventListener('click', function(e){
 //add books//
 
 const addForm = document.forms['add-book'];
-addForm.addEventListener('submit', function(e){
+addForm.addEventListener( 'submit', function(e){
     e.preventDefault();
 
     //create new elements//
@@ -169,5 +169,13 @@ addForm.addEventListener('submit', function(e){
     li.appendChild(deleteBtn);
     list.appendChild(li);
     //list.insertBefore(li, list.querySelector('li:first-child'));
+    
+    //append button class //
+    deleteBtn.classList.add("delete");
+
+    // reset form input//
+
+    document.getElementById('add-book').reset();
+    
 });
 
