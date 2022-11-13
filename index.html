@@ -40,9 +40,25 @@
             </ul>
         </div>
         <form id="add-book">
+            <input type="checkbox" id="hide"/>
+            <label for="hide">Hide all books</label>
             <input type="text" placeholder="Add a book..." />
             <button>Add</button>
         </form>
+        <div id ="tabbed-content">
+            <ul class="tabs">
+                <li data-target="#about" class = "active">About</li>
+                <li data-target="#contact">Contact</li>
+            </ul>
+            <div class="panel active" id="about">
+                <p>Content for about tab...</p>
+                <p>Further content for tab Further content for tab Further content for tab Further content for tabFurther content for tab</p>
+            </div>
+            <div class="panel" id="contact">
+                <p>Content for contact tab</p>
+                <p>Further content for contact tab Further content for contact tab Further content for contact tab Further content for contact tab</p>
+            </div>
+        </div>
     
     </div>
     <script src="script.js"></script>
